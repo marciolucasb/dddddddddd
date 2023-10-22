@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Live</title>
+</head>
+<body>
+  <script>
+    if (typeof window.allowfullscreen === 'undefined') {
+      window.allowfullscreen = true;
+    }
+    if (typeof document.querySelector === 'undefined') {
+      document.querySelector = function(selector) {
+        return document.querySelectorAll(selector)[0];
+      }
+    }
+  </script>
+
+  <iframe src="http://localhost:8080/live/livestream.flv" width="640" height="480" frameborder="0" allowfullscreen></iframe>
+</body>
+</html>
